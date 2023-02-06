@@ -25,6 +25,10 @@ public class climbStairsMinMoves {
             else
                 dp[i] = min;
         }
-        System.out.println(dp[0]);
+        if (dp[0] == Integer.MAX_VALUE) {
+            System.out.println("No path");
+        } else {
+            System.out.println(dp[0]);
+        }
     }
 }
